@@ -2,7 +2,6 @@ import "./style.css";
 import javascriptLogo from "./javascript.svg";
 import viteLogo from "/vite.svg";
 import { setupCounter } from "./counter.js";
-import { alertEl } from "./test.js";
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -12,16 +11,21 @@ document.querySelector("#app").innerHTML = `
     <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
       <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
     </a>
-    <h1>Hello Vite!</h1>
+    <h1 class="text-2xl bg-black text-white px-4 py-2">Hello Vite!</h1>
     <div class="card">
       <button id="counter" type="button"></button>
     </div>
     <p class="read-the-docs">
       Click on the Vite logo to learn more
     </p>
-  <div class="test">${alertEl}</div>
-
   </div>
 `;
 
 setupCounter(document.querySelector("#counter"));
+
+// .env variables
+console.log(import.meta.env.MODE);
+console.log(import.meta.env.PASSWORD);
+console.log(import.meta.env.VITE_PASSWORD);
+console.log(import.meta.env.VITE_DEV_NAME);
+console.log(import.meta.env.VITE_PROD_NAME);
