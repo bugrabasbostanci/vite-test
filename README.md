@@ -8,3 +8,9 @@ Vite hakkında tutorial izleyip denemeler yaptığım proje
 - creating static server
 - using templates
 - tailwind integration
+
+# day2
+
+- .env variables
+- deployment settings
+- configuration
