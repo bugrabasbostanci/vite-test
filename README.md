@@ -14,3 +14,4 @@ Vite hakkında tutorial izleyip denemeler yaptığım proje
 - .env variables
 - deployment settings
 - configuration
+- vitest

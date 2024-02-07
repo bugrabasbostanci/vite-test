@@ -1,5 +1,9 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  //   base: "/vite/",
+  // IF WE DIDN'T DEFINE globals: true
+  // import {test, expect} from vitest
+  test: {
+    globals: true,
+  },
 });
